@@ -1,0 +1,96 @@
+.div-1 {
+    background-color: #848884;
+    width:100%;
+}
+.jc-center {
+justify-content: center;
+text-align: center
+}
+
+.effect {
+   width: 100%;
+   padding: 0px 0px 0px 0px;
+ 
+}
+.effect:nth-child(2n+1) {
+   background-color: #ce1f1f;
+}
+.effect:nth-child(2n+1) h2 {
+   color: #212121;
+}
+.effect:nth-child(2n) a {
+   color: #d4301e;
+   border-color: #ce1f1f;
+}
+.effect .buttons {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  display: flex;
+
+}
+.effect a {
+   text-decoration: none !important;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   margin-right: 20px;
+   font-size: 25px;
+   overflow: hidden;
+   position: relative;
+   color: #212121;
+   border: 2px solid #212121;
+}
+.effect a i {
+   position: relative;
+   z-index: 3;
+}
+.effect a:last-child {
+   margin-right: 0px;
+}
+.effect a:before {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+.effect a i {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+/* solanio effect */
+.effect.solanio a {
+   border: none;
+   overflow: visible;
+}
+.effect.solanio a:after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   width: 100%;
+   height: 100%;
+   border: 2px solid #ef3724;
+   border-radius: 50%;
+   transition: all 0.2s linear 0s;
+}
+.effect.solanio a:hover:after {
+   height: 0px;
+   top: 100%;
+}
+
+@media(max-width:992px)
+{
+  .reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
